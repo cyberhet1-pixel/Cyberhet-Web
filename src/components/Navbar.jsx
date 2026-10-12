@@ -47,9 +47,22 @@ export default function Navbar({ className = '' }) {
       className={`navbar navbar-expand-lg navbar-nexora fixed-top ${scrolled ? 'scrolled' : ''} ${isBlueBg ? 'navbar-on-blue' : ''} ${className}`}
     >
       <div className="container">
-        <Link className="navbar-brand navbar-brand-custom" to="/" onClick={closeNav}>
+        {/* <Link className="navbar-brand navbar-brand-custom" to="/" onClick={closeNav}>
           Nexora<span>.</span>
-        </Link>
+        </Link> */}
+
+<Link
+  className="navbar-brand navbar-brand-custom"
+  to="/"
+  onClick={closeNav}
+>
+  <img
+    src="/CyberHet Technology Services Logo.png"
+    alt="CyberHet Technology Services"
+    className="navbar-logo"
+  />
+</Link>
+
 
         <button
           className={`navbar-toggler navbar-toggler-custom ${isOpen ? 'active' : ''}`}
@@ -81,21 +94,21 @@ export default function Navbar({ className = '' }) {
                 Services
               </NavLink>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <NavLink className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`} to="/portfolio" onClick={closeNav}>
                 Portfolio
               </NavLink>
-            </li>
+            </li> */}
             <li className="nav-item">
               <NavLink className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`} to="/blog" onClick={closeNav}>
                 Blog
               </NavLink>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <NavLink className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`} to="/pricing" onClick={closeNav}>
                 Pricing
               </NavLink>
-            </li>
+            </li> */}
             <li className="nav-item">
               <NavLink className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`} to="/contact" onClick={closeNav}>
                 Contact

@@ -1129,3 +1129,60 @@ body:has(.page-header) .navbar-nexora:not(.scrolled) .navbar-toggler-custom .bar
   border-radius: var(--n-radius-md);
   height: 100%;
 }
+
+
+
+
+.navbar-logo {
+  height: 48px;
+  width: auto;
+  max-width: 220px;
+  object-fit: contain;
+  display: block;
+}
+
+.navbar-brand-custom {
+  display: inline-flex;
+  align-items: center;
+}
+
+@media (max-width: 576px) {
+  .navbar-logo {
+    height: 38px;
+    max-width: 170px;
+  }
+}
+
+
+.footer-logo-link {
+  max-width: 100%;
+}
+
+.footer-logo {
+  display: block;
+  width: 190px;
+  height: 65px;
+  object-fit: contain;
+  object-position: left center;
+}
+
+.footer-nexora a {
+  text-decoration: none;
+}
+
+.footer-nexora .footer-logo-link:hover {
+  opacity: 0.9;
+}
+
+.footer-nexora .footer-bottom {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+@media (max-width: 576px) {
+  .footer-logo {
+    width: 165px;
+    height: 56px;
+  }
+}
