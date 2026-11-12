@@ -1,25 +1,433 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nexora — SaaS &amp; Digital Agency React Theme</title>
-  <meta name="description" content="Nexora is a premium React theme for SaaS startups, digital agencies, IT companies and consulting firms. Build a high-converting marketing website fast.">
-  <meta name="keywords" content="SaaS theme, agency template, React 18 theme, bootstrap 5 business theme, IT company website">
-  
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23155EEF'/%3E%3Ctext x='50' y='68' font-size='58' font-family='Arial' font-weight='800' fill='white' text-anchor='middle'%3EN%3C/text%3E%3C/svg%3E">
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <!-- ==========================================
+       1. BASIC CONFIGURATION
+  =========================================== -->
 
-  <!-- Bootstrap 5.3 & Icons CDN as backup/fast load -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta name="author" content="Cyberhet" />
+
+  <meta name="application-name" content="Cyberhet" />
+
+  <meta name="theme-color" content="#0B1220" />
+
+  <meta name="color-scheme" content="light" />
+
+  <!-- ==========================================
+       2. PRIMARY SEO
+  =========================================== -->
+
+  <title>
+    Cyberhet | AI, Software, Web & Digital Solutions Company
+  </title>
+
+  <meta
+    name="description"
+    content="Cyberhet helps businesses grow with AI development, website and mobile app development, custom software, SaaS, automation, SEO, digital marketing, branding and cloud solutions. Serving businesses worldwide."
+  />
+
+  <meta
+    name="keywords"
+    content="Cyberhet, AI Development, AI Tools, Website Development, Mobile App Development, Business Software, Business Automation, SEO, AI Search Optimization, Digital Marketing, Digital Marketing and Branding, UI UX Design, Product Design, Cloud Hosting, DevOps, Custom Software, SaaS Development, E-commerce Solutions, AI Agents, Intelligent Workflows, Social Media Marketing, Paid Ads, Performance Marketing, Search Marketing, Content Marketing, Video Production, Email Marketing, WhatsApp Marketing, Influencer Marketing, Creator Marketing, Branding, Creative Design, AI Marketing Solutions, Technical Consulting, Software Training"
+  />
+
+  <meta
+    name="robots"
+    content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+  />
+
+  <meta
+    name="googlebot"
+    content="index, follow"
+  />
+
+  <!-- ==========================================
+       3. CANONICAL URL
+  =========================================== -->
+
+  <link
+    rel="canonical"
+    href="https://www.cyberhet.com/"
+  />
+
+  <!-- ==========================================
+       4. FAVICON
+  =========================================== -->
+
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%230B1220'/%3E%3Cstop offset='100%25' stop-color='%23155EEF'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='url(%23g)'/%3E%3Ctext x='50' y='70' font-size='65' font-family='Arial' font-weight='800' fill='white' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E"
+  />
+
+  <!-- ==========================================
+       5. OPEN GRAPH / FACEBOOK / LINKEDIN
+  =========================================== -->
+
+  <meta
+    property="og:type"
+    content="website"
+  />
+
+  <meta
+    property="og:site_name"
+    content="Cyberhet"
+  />
+
+  <meta
+    property="og:title"
+    content="Cyberhet | Build the Future with Smarter Technology"
+  />
+
+  <meta
+    property="og:description"
+    content="Transform your ideas into powerful digital products with Cyberhet. Explore AI development, software, websites, mobile apps, automation, digital marketing and technology solutions."
+  />
+
+  <meta
+    property="og:url"
+    content="https://www.cyberhet.com/"
+  />
+
+  <meta
+    property="og:locale"
+    content="en_US"
+  />
+
+  <meta
+    property="og:image:alt"
+    content="Cyberhet - AI, Software and Digital Solutions Company"
+  />
+
+  <!-- Add your actual social sharing image when available -->
+  <!-- Recommended image: 1200 x 630 pixels -->
+  <!-- <meta property="og:image" content="https://www.cyberhet.com/og-image.jpg" /> -->
+
+  <!-- ==========================================
+       6. TWITTER / X SEO
+  =========================================== -->
+
+  <meta
+    name="twitter:card"
+    content="summary"
+  />
+
+  <meta
+    name="twitter:title"
+    content="Cyberhet | AI, Software & Digital Solutions"
+  />
+
+  <meta
+    name="twitter:description"
+    content="Build smarter digital products with Cyberhet. AI, web development, mobile apps, business automation, SEO and digital growth solutions."
+  />
+
+  <!-- ==========================================
+       7. GOOGLE FONTS
+  =========================================== -->
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  />
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@400;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- ==========================================
+       8. BOOTSTRAP CSS
+  =========================================== -->
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- ==========================================
+       9. BOOTSTRAP ICONS
+  =========================================== -->
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    rel="stylesheet"
+  />
+
+  <!-- ==========================================
+       10. CYBERHET ORGANIZATION & WEBSITE SCHEMA
+  =========================================== -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.cyberhet.com/#organization",
+        "name": "Cyberhet",
+        "url": "https://www.cyberhet.com/",
+        "description": "Cyberhet is a technology company providing AI development, software development, website and mobile app development, business automation, SaaS, digital marketing, branding and cloud solutions.",
+        "areaServed": "Worldwide",
+        "knowsAbout": [
+          "AI Development & AI Tools",
+          "Website Development",
+          "Mobile App Development",
+          "Business Software & Automation",
+          "SEO & AI Search Optimization",
+          "Digital Marketing & Branding",
+          "UI/UX & Product Design",
+          "Cloud, Hosting & DevOps",
+          "Custom Software & SaaS Development",
+          "Creative & Creator Services",
+          "E-commerce Solutions",
+          "AI Agents & Intelligent Workflows",
+          "Technical Consulting & Training",
+          "Digital Marketing",
+          "Social Media Marketing",
+          "Paid Ads & Performance Marketing",
+          "SEO & Search Marketing",
+          "Content Marketing & Video Production",
+          "Email & WhatsApp Marketing",
+          "Influencer & Creator Marketing",
+          "Branding & Creative Design",
+          "AI Marketing Solutions"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Cyberhet Services",
+          "itemListElement": [
+            {
+              "@type": "OfferCatalog",
+              "name": "AI & Software Technology",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "AI Development & AI Tools"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Business Software & Automation"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Custom Software & SaaS Development"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "AI Agents & Intelligent Workflows"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Technical Consulting & Training"
+                  }
+                }
+              ]
+            },
+            {
+              "@type": "OfferCatalog",
+              "name": "Development & Digital Products",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Website Development"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Mobile App Development"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "UI/UX & Product Design"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Cloud, Hosting & DevOps"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "E-commerce Solutions"
+                  }
+                }
+              ]
+            },
+            {
+              "@type": "OfferCatalog",
+              "name": "Digital Marketing & Growth",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "SEO & AI Search Optimization"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Digital Marketing"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Social Media Marketing"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Paid Ads & Performance Marketing"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "SEO & Search Marketing"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Content Marketing & Video Production"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Email & WhatsApp Marketing"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Influencer & Creator Marketing"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "AI Marketing Solutions"
+                  }
+                }
+              ]
+            },
+            {
+              "@type": "OfferCatalog",
+              "name": "Branding & Creative Services",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Digital Marketing & Branding"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Creative & Creator Services"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Branding & Creative Design"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.cyberhet.com/#website",
+        "url": "https://www.cyberhet.com/",
+        "name": "Cyberhet",
+        "description": "AI, Software Development and Digital Solutions Company",
+        "publisher": {
+          "@id": "https://www.cyberhet.com/#organization"
+        },
+        "inLanguage": "en"
+      }
+    ]
+  }
+  </script>
+
 </head>
+
 <body>
+
+  <!-- ==========================================
+       11. REACT APPLICATION ROOT
+  =========================================== -->
+
   <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
+
+  <!-- ==========================================
+       12. REACT ENTRY POINT
+  =========================================== -->
+
+  <script
+    type="module"
+    src="/src/main.jsx"
+  ></script>
+
 </body>
+
 </html>
